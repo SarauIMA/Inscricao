@@ -1,0 +1,144 @@
+body{
+    margin: 0px;
+    background-color: rgb(53, 53, 53);
+    font-family: cursive;
+    color: white;
+}
+input:focus{
+    outline: none;
+    color: white;
+}
+input{
+    color: white;
+}
+h1{
+    background-color:rgb(0, 17, 53);
+    margin: 0px;
+    padding: 30px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#sla{
+    background-color: rgb(0, 17, 53);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+#apresentacao{
+    padding-left: 30px;
+}
+#nomepartipantesInput{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(0, 17, 53) ;
+    height: 25px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#nome{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(0, 17, 53) ;
+    height: 25px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tel{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(0, 17, 53) ;
+    height: 25px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#numero{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(0, 17, 53) ;
+    height: 25px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desc{
+    padding-left: 55px;
+    font-size: 13px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+}
+.serie{
+    display: none;
+}
+#nomepartipantes{
+    display: none;
+}
+#musica{
+    display: none;
+}
+#musicaInput{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(0, 17, 53) ;
+    height: 25px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#outro{
+    display: none;
+}
+#outroInput{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(0, 17, 53) ;
+    height: 25px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#enviar{
+    border-radius: 30px;
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(122, 122, 122);
+    }

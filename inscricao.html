@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleinsc.css">
+    <title>Inscrição</title>
+</head>
+<body>
+    <h1>Inscrição</h1>
+    <div id="sla">
+        <div id="Form">
+            <form action="https://api.sheetmonkey.io/form/8bf7NDkZ4Bbb59RV6w4AMX" method="post">
+                    <label for="nome" class="desc">Nome: </label>
+                    <input type="text" name="nome" id="nome"> <br>
+                <label for="tel" class="desc">Telefone: </label>
+                <input type="tel" name="telefone" id="tel"> <br>
+                <div id="container">
+                    <div id="serie">
+                        <label for="serie">Serie:</label>
+                            <select name="" id="">
+                                <option value="6">6°</option>
+                                <option value="7">7°</option>
+                                <option value="8">8°</option>
+                                <option value="9">9°</option>
+                                <option value="1">1°</option>
+                                <option value="2">2°</option>
+                                <option value="3">3°</option>
+                            </select> <br>
+                    </div>
+                     <div id="apresentacao">
+                         <label>Apresentação:</label> <br>
+        
+                        <input type="radio" name="apresentacao" value="canto" id="canto">
+                        <label for="canto">Canto</label> <br>
+                        <input type="radio" name="apresentacao" value="danca" id="danca">
+                        <label for="danca">Dança</label> <br>
+                        <input type="radio" name="apresentacao" value="instrumento" id="instrumento">
+                        <label for="instrumento">Tocar Instrumento</label> <br>
+                        <input type="radio" name="apresentacao" value="outro" id="outroRadio">
+                        <label for="outroRadio">Outro</label><br>
+        
+                     </div>
+                </div>
+        
+                <div id="musica">
+                    <label for="" class="desc">Qual sua Musica?: </label>
+                    <input type="text" id="musicaInput">
+                </div>
+                <div id="outro">
+                    <label for="" class="desc">Qual outra apresentação?: </label>
+                    <input type="text" id="outroInput">
+                </div>
+                <label for="numero" class="desc">Numero de participantes</label>
+                    <input type="number" id="numero"> <br>
+                <div id="nomepartipantes">
+                    <label for="nomepartipantes" class="desc">Nome dos participantes</label> <br>
+                    <input type="text" id="nomepartipantesInput" name="nomepartipantes">
+                </div>
+                <button id="enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
