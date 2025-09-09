@@ -1,7 +1,14 @@
+.jura {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 body{
     margin: 0px;
     background-color: rgb(53, 53, 53);
-    font-family: cursive;
+    font-family: Jura, sans-serif;
     color: white;
 }
 input:focus{
@@ -16,7 +23,6 @@ h1{
     margin: 0px;
     padding: 30px;
     font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 #sla{
@@ -50,9 +56,17 @@ h1{
     margin-right: auto;
 }
 #container {
+    font-size: 13px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start; /* Alinha os itens ao início da linha */
+}
+#serie{
+    
+    padding-right: 20px;
 }
 #nome{
     border: none;
@@ -91,13 +105,9 @@ h1{
     margin-right: auto;
 }
 .desc{
-    padding-left: 55px;
+    padding-left: 25px;
     font-size: 13px;
-    font-family: monospace;
     color: rgb(255, 255, 255);
-}
-.serie{
-    display: none;
 }
 #nomepartipantes{
     display: none;
@@ -133,6 +143,7 @@ h1{
     margin-right: auto;
 }
 #enviar{
+    color: white;
     border-radius: 30px;
     margin-top: 20px;
     width: 50%;
@@ -140,5 +151,5 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(122, 122, 122);
+    background-color: rgb(104, 104, 104);
     }

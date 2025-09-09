@@ -53,4 +53,3 @@ function verificarSelecao() {
 for (const radio of radios) {
     radio.addEventListener("change", verificarSelecao);
 }
-
