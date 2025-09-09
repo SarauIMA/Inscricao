@@ -1,32 +1,32 @@
 .jura {
   font-family: "Jura", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
 body{
     margin: 0px;
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(209, 209, 209);
     font-family: Jura, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 input:focus{
     outline: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 input{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 h1{
-    background-color:rgb(0, 17, 53);
+    background-image: linear-gradient(to right, rgb(255, 225,0 ),rgb(218,165,32));
     margin: 0px;
     padding: 30px;
     font-size: 50px;
     text-align: center;
 }
 #sla{
-    background-color: rgb(0, 17, 53);
+    background-color: rgb(255, 255, 255);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -36,7 +36,6 @@ h1{
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    border-color: black;
     border-style: solid;
     border-width: 1px;
 }
@@ -45,8 +44,8 @@ h1{
 }
 #nomepartipantesInput{
     border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(0, 17, 53) ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255) ;
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -70,8 +69,8 @@ h1{
 }
 #nome{
     border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(0, 17, 53) ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255) ;
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -82,8 +81,8 @@ h1{
 }
 #tel{
     border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(0, 17, 53) ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255) ;
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -94,8 +93,8 @@ h1{
 }
 #numero{
     border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(0, 17, 53) ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255) ;
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -107,7 +106,7 @@ h1{
 .desc{
     padding-left: 25px;
     font-size: 13px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 #nomepartipantes{
     display: none;
@@ -117,8 +116,8 @@ h1{
 }
 #musicaInput{
     border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(0, 17, 53) ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255) ;
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -132,8 +131,8 @@ h1{
 }
 #outroInput{
     border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(0, 17, 53) ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255) ;
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -142,8 +141,11 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+#participantes{
+    margin-left: 25px;
+}
 #enviar{
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 30px;
     margin-top: 20px;
     width: 50%;
@@ -151,5 +153,5 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(104, 104, 104);
-    }
+    background-image: linear-gradient(to right, rgb(255, 225,0 ),rgb(218,165,32));
+}

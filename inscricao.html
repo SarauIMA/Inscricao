@@ -14,14 +14,20 @@
     <div id="sla">
         <div id="Form">
             <form action="https://api.sheetmonkey.io/form/8bf7NDkZ4Bbb59RV6w4AMX" method="post">
-                    <label for="nome" class="desc">Nome: </label>
-                    <input type="text" name="nome" id="nome"> <br>
+
+                <label for="nome" class="desc">Nome: </label>
+                <input type="text" name="nome" id="nome" required> <br>
+
+
                 <label for="tel" class="desc">Telefone: </label>
-                <input type="tel" name="telefone" id="tel"> <br>
+                <input type="tel" name="telefone" id="tel" required> <br>
+
+
                 <div id="container">
-                    <div id="serie">
+
+                    <div id="serie-container">
                         <label for="serie">Serie:</label>
-                            <select name="" id="serie">
+                            <select name="serie" id="serie" required>
                                 <option value="6">6°</option>
                                 <option value="7">7°</option>
                                 <option value="8">8°</option>
@@ -31,6 +37,8 @@
                                 <option value="3">3°</option>
                             </select> <br>
                     </div>
+                
+
                      <div id="apresentacao">
                          <label>Apresentação:</label> <br>
         
@@ -44,23 +52,35 @@
                         <label for="outroRadio">Outro</label><br>
         
                      </div>
+
                 </div>
+
         
                 <div id="musica">
-                    <label for="" class="desc">Qual sua Musica?: </label>
-                    <input type="text" id="musicaInput">
+                    <label for="Nome_Musica" class="desc">Qual sua Musica?: </label>
+                    <input type="text" id="musicaInput" name="Nome_Musica">
                 </div>
                 <div id="outro">
-                    <label for="" class="desc">Qual outra apresentação?: </label>
-                    <input type="text" id="outroInput">
+                    <label for="outra_apresentacao" class="desc">Qual outra apresentação?: </label>
+                    <input type="text" id="outroInput" name="outra_apresentacao">
                 </div>
-                <label for="numero" class="desc">Numero de participantes</label>
-                    <input type="number" id="numero"> <br>
+
+                <input type="checkbox" name="chec" id="participantes">
+                <label for="check" class="desc">Apresentação de Turma</label>
+                <br>
+                <label for="numero_de_partipantes" class="desc">Numero de participantes</label>
+                <input type="number" id="numero" name="numero_de_partipantes" required> <br>
+
+
                 <div id="nomepartipantes">
                     <label for="nomepartipantes" class="desc">Nome dos participantes</label> <br>
                     <input type="text" id="nomepartipantesInput" name="nomepartipantes">
                 </div>
+
+
                 <button id="enviar">Enviar</button>
+
+                <p></p>
             </form>
         </div>
     </div>
