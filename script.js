@@ -58,13 +58,15 @@ function verificarSelecao() {
     musicaDiv.style.display = "none";
     outroDiv.style.display = "none";
 
-    if (selecionado === "canto" || selecionado === "danca") {
-    musicaDiv.style.display = "block";
-    musicaInput.required = true;
-    } else if (selecionado === "outro") {
+    if (selecionado === "outro") {
     outroDiv.style.display = "block";
     outroInput.required = true;
     }
+    else if (selecionado === "canto" || selecionado === "danca" || selecionado === "instrumento") {
+    musicaDiv.style.display = "block";
+    musicaInput.required = true;
+    } 
+    
     else{
         musicaInput.required = false;
         outroInput.required = false;
@@ -73,4 +75,12 @@ function verificarSelecao() {
 
 for (const radio of radios) {
     radio.addEventListener("change", verificarSelecao);
+}
+
+const params = new URLSearchParams(window.location.search);
+const musica = params.get("Nome_Musica");
+const cant = document.getElementById("canto")
+if (musica) {
+document.getElementById("musicaInput").value = musica;
+cant.checked()
 }

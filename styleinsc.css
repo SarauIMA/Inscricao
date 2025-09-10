@@ -7,35 +7,37 @@
 
 body{
     margin: 0px;
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(78, 78, 78);
     font-family: Jura, sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* trocado de preto para branco */
 }
 input:focus{
     outline: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* trocado de preto para branco */
 }
 input{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* trocado de preto para branco */
 }
 .cabecalho{
-    background-image: linear-gradient(to right, rgb(255, 225,0 ),rgb(218,165,32));
+    background-color: black;
+    color:  rgb(214, 175, 1);
     margin: 0px;
     padding: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 10px;
 }
 .cabecalho a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color:  rgb(214, 175, 1);
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 h1{
     font-size: 50px;
     text-align: center;
 }
-#sla{
-    background-color: rgb(255, 255, 255);
+.info{
+    background-color: rgb(0, 0, 0); /* trocado de branco para preto */
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -53,8 +55,8 @@ h1{
 }
 #nomepartipantesInput{
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255) ;
+    border-bottom: 1px solid rgb(255, 255, 255); /* trocado de preto para branco */
+    background-color: rgb(0, 0, 0) ; /* trocado de branco para preto */
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -78,8 +80,8 @@ h1{
 }
 #nome{
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255) ;
+    border-bottom: 1px solid rgb(255, 255, 255); /* trocado de preto para branco */
+    background-color: rgb(0, 0, 0) ; /* trocado de branco para preto */
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -90,8 +92,8 @@ h1{
 }
 #tel{
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255) ;
+    border-bottom: 1px solid rgb(255, 255, 255); /* trocado de preto para branco */
+    background-color: rgb(0, 0, 0) ; /* trocado de branco para preto */
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -102,8 +104,8 @@ h1{
 }
 #numero{
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255) ;
+    border-bottom: 1px solid rgb(255, 255, 255); /* trocado de preto para branco */
+    background-color: rgb(0, 0, 0) ; /* trocado de branco para preto */
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -115,18 +117,15 @@ h1{
 .desc{
     padding-left: 25px;
     font-size: 13px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* trocado de preto para branco */
 }
 #nomepartipantes{
     display: none;
 }
-#musica{
-    display: none;
-}
 #musicaInput{
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255) ;
+    border-bottom: 1px solid rgb(255, 255, 255); /* trocado de preto para branco */
+    background-color: rgb(0, 0, 0) ; /* trocado de branco para preto */
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -140,8 +139,8 @@ h1{
 }
 #outroInput{
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255) ;
+    border-bottom: 1px solid rgb(255, 255, 255); /* trocado de preto para branco */
+    background-color: rgb(0, 0, 0) ; /* trocado de branco para preto */
     height: 25px;
     padding-left: 10px;
     margin-top: 10px;
@@ -151,10 +150,14 @@ h1{
     margin-right: auto;
 }
 #participantes{
+    margin: 20px;
     margin-left: 25px;
 }
+#check{
+    padding-left: 0px;
+}
 #enviar{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* trocado de preto para branco */
     border-radius: 30px;
     margin-top: 20px;
     width: 50%;
@@ -162,16 +165,70 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgb(255, 225,0 ),rgb(218,165,32));
-}
+    border: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(214, 175, 1);}
 .rodape{
-    position: fixed;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     left: 0px;
     bottom: 0px;
-    width: 100%;
-    background-image: linear-gradient(to right, rgb(255, 225,0 ),rgb(218,165,32));
+    background-color: rgb(214, 175, 1);
     margin: 0px;
     padding: 10px;
     text-align: center;
+    margin-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.line{
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+#des{
+    color: rgb(255, 255, 255);
+}
+/* From Uiverse.io by csemszepp */ 
+.custum-file-upload {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #e8e8e8;
+  background-color: #212121;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px #e8e8e8;
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: #e8e8e8;
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+.custum-file-upload input {
+  display: none;
 }
