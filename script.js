@@ -1,3 +1,6 @@
+
+
+
 function mostrar(){
     let serie = document.getElementById("serie");
     if(
