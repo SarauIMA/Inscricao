@@ -79,3 +79,9 @@ a{
     color: black;
     margin-top: 20px;
 }
+.usada {
+    color: gray;
+    text-decoration: line-through;
+    pointer-events: none; /* impede clique */
+    cursor: default;
+}
