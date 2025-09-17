@@ -114,6 +114,9 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+#outroDiv{
+    display: none;
+}
 .desc{
     padding-left: 25px;
     font-size: 13px;
@@ -133,9 +136,6 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-#outro{
-    display: none;
 }
 #outroInput{
     border: none;
