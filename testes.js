@@ -71,14 +71,34 @@ const radios = document.querySelectorAll('input[name="apresentacao"]');
                 criadoEm: new Date()
             });
 
-            alert("Inscrição enviada com sucesso!");
-            form.reset();
+            window.location.href = "inscrito.html";
         } catch (error) {
             console.error("Erro ao salvar inscrição: ", error);
             alert("Erro ao enviar inscrição, tente novamente.");
         }
     });
-    
+
 const parames = new URLSearchParams(window.location.search);
 const musicaURL = parames.get("Nome_Musica");
 if (musicaURL) document.getElementById("musicaInput").value = musicaURL;
+
+const np = document.getElementById("numero");
+const npInput = document.getElementById("nomepartipantes");
+
+function atualizarNomeParticipantes() {
+    const valor = parseInt(np.value);
+    if (!isNaN(valor) && valor > 1) {
+        npInput.style.display = "block";
+        npInput.required = true;
+    } else {
+        npInput.style.display = "none";
+        npInput.required = false;
+        npInput.value = "";
+    }
+}
+
+// Atualiza ao carregar a página
+atualizarNomeParticipantes();
+
+// Atualiza sempre que o usuário muda o número
+np.addEventListener("input", atualizarNomeParticipantes);
